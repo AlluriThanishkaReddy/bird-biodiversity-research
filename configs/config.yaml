@@ -1,0 +1,166 @@
+# ==============================================================================
+# ACOUSTIC BIRD BIODIVERSITY MONITORING SYSTEM - RESEARCH CONFIGURATION
+# ==============================================================================
+# Fixed Research Question:
+#   "How does realistic environmental noise affect bird species classification,
+#    and to what extent can noise-aware training improve the robustness and
+#    reliability of acoustic biodiversity monitoring?"
+#
+# NOTE ON INITIAL RESEARCH VALUES:
+#   The audio parameters, sample rate, clip duration, and seed specified below
+#   represent initial research configuration values. They establish the canonical
+#   baseline for the study and can only be altered through formal, controlled
+#   ablation experiments with documented hypotheses and comparative metrics.
+# ==============================================================================
+
+project:
+  name: "bird-biodiversity-research"
+  version: "0.1.0"
+  description: "Acoustic bird biodiversity monitoring under realistic environmental noise"
+  research_question: "How does realistic environmental noise affect bird species classification, and to what extent can noise-aware training improve the robustness and reliability of acoustic biodiversity monitoring?"
+
+# ------------------------------------------------------------------------------
+# Reproducibility Settings
+# ------------------------------------------------------------------------------
+# Fixed seed applied across Python standard library, NumPy, and PyTorch (CPU & CUDA)
+# to guarantee exact experimental determinism across pipeline runs.
+reproducibility:
+  random_seed: 42
+  deterministic_cudnn: true
+  benchmark_cudnn: false
+
+# ------------------------------------------------------------------------------
+# Dataset Paths & Governance
+# ------------------------------------------------------------------------------
+# The raw BirdCLEF 2024 dataset is mounted externally and treated as read-only.
+# Under no circumstances should raw files be modified, moved, copied, or re-downloaded.
+data:
+  dataset_name: "birdclef-2024"
+  # External dataset root path (configured with forward slashes)
+  dataset_root: "C:/Datasets/birdclef-2024"
+  
+  # Local project directories for generated artifacts
+  manifests_dir: "data/manifests"
+  processed_dir: "data/processed"
+  raw_dir: "data/raw"
+  
+  # Dataset sub-paths relative to dataset_root
+  train_audio_dir: "train_audio"
+  train_metadata: "train_metadata.csv"
+  test_soundscapes_dir: "test_soundscapes"
+  taxonomy: "eBird_Taxonomy_v2021.csv"
+  sample_submission: "sample_submission.csv"
+
+# ------------------------------------------------------------------------------
+# Audio & Acoustic Preprocessing Parameters
+# ------------------------------------------------------------------------------
+# Canonical baseline audio representation parameters.
+# Any modification requires controlled ablation tracking.
+audio:
+  # Sampling rate in Hz (Nyquist frequency = 16,000 Hz)
+  sample_rate: 32000
+  
+  # Duration of individual audio analysis windows in seconds
+  clip_duration: 5.0
+  
+  # Number of samples per clip (sample_rate * clip_duration = 160,000)
+  target_samples: 160000
+  
+  # STFT analysis window size in samples (~64 ms at 32 kHz)
+  n_fft: 2048
+  
+  # Window hop length / stride in samples (~16 ms at 32 kHz, 75% overlap)
+  hop_length: 512
+  
+  # Number of Mel frequency bins
+  n_mels: 128
+  
+  # Minimum frequency cutoff in Hz (filtering out low-frequency microphone rumble)
+  fmin: 50
+  
+  # Maximum frequency cutoff in Hz (covers up to high-frequency bird calls)
+  fmax: 16000
+  
+  # Window function type
+  window: "hann"
+  
+  # Power spectrogram exponent (2.0 for power, 1.0 for energy)
+  power: 2.0
+  
+  # Decibel conversion reference amplitude
+  top_db: 80.0
+  
+  # Normalization strategy: "instance_standardization", "min_max", or "none"
+  normalization: "instance_standardization"
+
+# ------------------------------------------------------------------------------
+# Noise Simulation & Calibration (Noise-Aware Training)
+# ------------------------------------------------------------------------------
+# Protocols for investigating degradation under realistic environmental degradation.
+noise_simulation:
+  enabled: true
+  noise_types:
+    - "wind"
+    - "rain"
+    - "stream"
+    - "insect"
+    - "anthropogenic"
+  snr_levels_db:
+    min: -15
+    max: 15
+    step: 5
+  mixing_probability: 0.5
+  evaluation_fixed_snrs: [-15, -10, -5, 0, 5, 10, 15]
+
+# ------------------------------------------------------------------------------
+# Baseline Model Architecture Configuration
+# ------------------------------------------------------------------------------
+model:
+  architecture: "efficientnet_b0"
+  pretrained: true
+  in_channels: 1
+  num_classes: 182  # BirdCLEF 2024 target species count
+  dropout_rate: 0.3
+  pooling: "gem"    # Generalized Mean Pooling or "avg"
+
+# ------------------------------------------------------------------------------
+# Training Hyperparameters
+# ------------------------------------------------------------------------------
+training:
+  batch_size: 32
+  num_workers: 4
+  epochs: 30
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  optimizer: "adamw"
+  scheduler: "cosine_annealing"
+  min_lr: 0.000001
+  warmup_epochs: 3
+  loss_function: "bce_with_logits"
+  gradient_clip_val: 1.0
+  mixed_precision: true
+
+# ------------------------------------------------------------------------------
+# Evaluation & Benchmark Metrics
+# ------------------------------------------------------------------------------
+evaluation:
+  batch_size: 64
+  primary_metric: "macro_roc_auc"
+  secondary_metrics:
+    - "macro_f1"
+    - "top_1_accuracy"
+    - "top_5_accuracy"
+    - "expected_calibration_error"
+  decision_threshold: 0.5
+  temperature_scaling: true
+
+# ------------------------------------------------------------------------------
+# Artifacts, Logging & Output Directories
+# ------------------------------------------------------------------------------
+outputs:
+  models_dir: "models"
+  experiments_dir: "experiments"
+  reports_dir: "reports"
+  figures_dir: "reports/figures"
+  results_dir: "reports/results"
+  log_level: "INFO"
