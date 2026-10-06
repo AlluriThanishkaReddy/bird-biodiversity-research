@@ -1,0 +1,663 @@
+{
+  "timestamp": "2026-10-04T11:37:42.293122",
+  "overall_status": "WARN",
+  "dataset_root": "C:\\Datasets\\birdclef-2024",
+  "baseline_sample_rate": 32000,
+  "baseline_clip_duration": 5.0,
+  "validation_checks": {
+    "1_directory_structure": {
+      "status": "PASS",
+      "dataset_root": "C:\\Datasets\\birdclef-2024",
+      "expected_items": {
+        "train_audio": {
+          "type": "dir",
+          "exists": true,
+          "path": "C:\\Datasets\\birdclef-2024\\train_audio"
+        },
+        "train_metadata.csv": {
+          "type": "file",
+          "exists": true,
+          "path": "C:\\Datasets\\birdclef-2024\\train_metadata.csv"
+        },
+        "test_soundscapes": {
+          "type": "dir",
+          "exists": true,
+          "path": "C:\\Datasets\\birdclef-2024\\test_soundscapes"
+        },
+        "eBird_Taxonomy_v2021.csv": {
+          "type": "file",
+          "exists": true,
+          "path": "C:\\Datasets\\birdclef-2024\\eBird_Taxonomy_v2021.csv"
+        },
+        "sample_submission.csv": {
+          "type": "file",
+          "exists": true,
+          "path": "C:\\Datasets\\birdclef-2024\\sample_submission.csv"
+        },
+        "unlabeled_soundscapes": {
+          "type": "dir",
+          "exists": true,
+          "path": "C:\\Datasets\\birdclef-2024\\unlabeled_soundscapes",
+          "optional": true
+        }
+      },
+      "species_folders_count": 182
+    },
+    "2_train_metadata": {
+      "status": "PASS",
+      "path": "C:\\Datasets\\birdclef-2024\\train_metadata.csv",
+      "total_rows": 24459,
+      "total_columns": 12,
+      "columns": [
+        "primary_label",
+        "secondary_labels",
+        "type",
+        "latitude",
+        "longitude",
+        "scientific_name",
+        "common_name",
+        "author",
+        "license",
+        "rating",
+        "url",
+        "filename"
+      ],
+      "missing_expected_columns": [],
+      "extra_columns": []
+    },
+    "3_number_of_recordings": {
+      "status": "PASS",
+      "metadata_recordings_count": 24459,
+      "disk_recordings_count": 24459,
+      "counts_match": true,
+      "orphaned_on_disk_count": 0,
+      "missing_from_disk_count": 0,
+      "orphaned_samples": [],
+      "missing_samples": []
+    },
+    "4_unique_species": {
+      "status": "PASS",
+      "unique_species_count": 182,
+      "expected_species_count": 182,
+      "species_folders_count": 182,
+      "species_match_folders": true,
+      "sample_submission_species_count": 182,
+      "species_match_sample_submission": true,
+      "species_list_sample": [
+        "asbfly",
+        "ashdro1",
+        "ashpri1",
+        "ashwoo2",
+        "asikoe2",
+        "asiope1",
+        "aspfly1",
+        "aspswi1",
+        "barfly1",
+        "barswa"
+      ]
+    },
+    "5_class_distribution": {
+      "status": "PASS",
+      "total_classes": 182,
+      "min_recordings_per_class": 5,
+      "max_recordings_per_class": 500,
+      "mean_recordings_per_class": 134.39,
+      "median_recordings_per_class": 60.5,
+      "std_recordings_per_class": 156.83,
+      "imbalance_ratio": 100.0,
+      "classes_under_10_samples_count": 13,
+      "classes_under_20_samples_count": 34,
+      "classes_under_50_samples_count": 81,
+      "rarest_species": {
+        "malwoo1": 10,
+        "pomgrp2": 9,
+        "rutfly6": 8,
+        "nilfly2": 8,
+        "bncwoo3": 7,
+        "paisto1": 7,
+        "wbbfly1": 7,
+        "darter2": 7,
+        "blaeag1": 6,
+        "wynlau1": 6,
+        "asiope1": 5,
+        "integr": 5,
+        "niwpig1": 5
+      },
+      "top_10_species": {
+        "bcnher": 500,
+        "barswa": 500,
+        "bkwsti": 500,
+        "blrwar1": 500,
+        "comsan": 500,
+        "comgre": 500,
+        "eaywag1": 500,
+        "commoo3": 500,
+        "comkin1": 500,
+        "comros": 500
+      },
+      "multi_label_statistics": {
+        "clips_with_0_secondary": 22567,
+        "clips_with_1_secondary": 1415,
+        "clips_with_2_secondary": 304,
+        "clips_with_3_or_more_secondary": 173,
+        "max_secondary_labels_in_single_clip": 7
+      }
+    },
+    "6_missing_metadata": {
+      "status": "WARN",
+      "total_rows": 24459,
+      "missing_per_column": {
+        "primary_label": {
+          "missing_count": 0,
+          "missing_percentage": 0.0
+        },
+        "secondary_labels": {
+          "missing_count": 0,
+          "missing_percentage": 0.0
+        },
+        "type": {
+          "missing_count": 0,
+          "missing_percentage": 0.0
+        },
+        "latitude": {
+          "missing_count": 378,
+          "missing_percentage": 1.5454
+        },
+        "longitude": {
+          "missing_count": 378,
+          "missing_percentage": 1.5454
+        },
+        "scientific_name": {
+          "missing_count": 0,
+          "missing_percentage": 0.0
+        },
+        "common_name": {
+          "missing_count": 0,
+          "missing_percentage": 0.0
+        },
+        "author": {
+          "missing_count": 0,
+          "missing_percentage": 0.0
+        },
+        "license": {
+          "missing_count": 0,
+          "missing_percentage": 0.0
+        },
+        "rating": {
+          "missing_count": 0,
+          "missing_percentage": 0.0
+        },
+        "url": {
+          "missing_count": 0,
+          "missing_percentage": 0.0
+        },
+        "filename": {
+          "missing_count": 0,
+          "missing_percentage": 0.0
+        }
+      },
+      "latitude_missing": 378,
+      "longitude_missing": 378,
+      "rating_min": 0.0,
+      "rating_max": 5.0,
+      "rating_mean": 3.84,
+      "zero_rating_count": 603
+    },
+    "7_duplicate_filenames": {
+      "status": "PASS",
+      "exact_duplicate_filename_rows": 0,
+      "unique_basenames_count": 24440,
+      "shared_audio_basenames_count": 19,
+      "shared_recordings": [
+        {
+          "basename": "XC403621.ogg",
+          "count": 2,
+          "species_assigned": [
+            "bcnher",
+            "litegr"
+          ],
+          "relative_paths": [
+            "bcnher/XC403621.ogg",
+            "litegr/XC403621.ogg"
+          ],
+          "authors": [
+            "Fr\u00e9d\u00e9ric Cazaban",
+            "Fr\u00e9d\u00e9ric Cazaban"
+          ],
+          "urls": [
+            "https://www.xeno-canto.org/403621",
+            "https://xeno-canto.org/403621"
+          ]
+        },
+        {
+          "basename": "XC306398.ogg",
+          "count": 2,
+          "species_assigned": [
+            "bkcbul1",
+            "rewbul"
+          ],
+          "relative_paths": [
+            "bkcbul1/XC306398.ogg",
+            "rewbul/XC306398.ogg"
+          ],
+          "authors": [
+            "Albert Lastukhin",
+            "Albert Lastukhin"
+          ],
+          "urls": [
+            "https://www.xeno-canto.org/306398",
+            "https://xeno-canto.org/306398"
+          ]
+        },
+        {
+          "basename": "XC163901.ogg",
+          "count": 2,
+          "species_assigned": [
+            "bladro1",
+            "goflea1"
+          ],
+          "relative_paths": [
+            "bladro1/XC163901.ogg",
+            "goflea1/XC163901.ogg"
+          ],
+          "authors": [
+            "Albert Lastukhin",
+            "Albert Lastukhin"
+          ],
+          "urls": [
+            "https://www.xeno-canto.org/163901",
+            "https://xeno-canto.org/163901"
+          ]
+        },
+        {
+          "basename": "XC208794.ogg",
+          "count": 2,
+          "species_assigned": [
+            "bladro1",
+            "goflea1"
+          ],
+          "relative_paths": [
+            "bladro1/XC208794.ogg",
+            "goflea1/XC208794.ogg"
+          ],
+          "authors": [
+            "Albert Lastukhin & Sergei Karpeev",
+            "Albert Lastukhin & Sergei Karpeev"
+          ],
+          "urls": [
+            "https://www.xeno-canto.org/208794",
+            "https://xeno-canto.org/208794"
+          ]
+        },
+        {
+          "basename": "XC208795.ogg",
+          "count": 2,
+          "species_assigned": [
+            "bladro1",
+            "goflea1"
+          ],
+          "relative_paths": [
+            "bladro1/XC208795.ogg",
+            "goflea1/XC208795.ogg"
+          ],
+          "authors": [
+            "Albert Lastukhin & Sergei Karpeev",
+            "Albert Lastukhin & Sergei Karpeev"
+          ],
+          "urls": [
+            "https://www.xeno-canto.org/208795",
+            "https://xeno-canto.org/208795"
+          ]
+        },
+        {
+          "basename": "XC209203.ogg",
+          "count": 2,
+          "species_assigned": [
+            "bladro1",
+            "goflea1"
+          ],
+          "relative_paths": [
+            "bladro1/XC209203.ogg",
+            "goflea1/XC209203.ogg"
+          ],
+          "authors": [
+            "Albert Lastukhin & Sergei Karpeev",
+            "Albert Lastukhin & Sergei Karpeev"
+          ],
+          "urls": [
+            "https://www.xeno-canto.org/209203",
+            "https://xeno-canto.org/209203"
+          ]
+        },
+        {
+          "basename": "XC209549.ogg",
+          "count": 2,
+          "species_assigned": [
+            "bladro1",
+            "goflea1"
+          ],
+          "relative_paths": [
+            "bladro1/XC209549.ogg",
+            "goflea1/XC209549.ogg"
+          ],
+          "authors": [
+            "Albert Lastukhin & Sergei Karpeev",
+            "Albert Lastukhin & Sergei Karpeev"
+          ],
+          "urls": [
+            "https://www.xeno-canto.org/209549",
+            "https://xeno-canto.org/209549"
+          ]
+        },
+        {
+          "basename": "XC209564.ogg",
+          "count": 2,
+          "species_assigned": [
+            "bladro1",
+            "goflea1"
+          ],
+          "relative_paths": [
+            "bladro1/XC209564.ogg",
+            "goflea1/XC209564.ogg"
+          ],
+          "authors": [
+            "Albert Lastukhin & Sergei Karpeev",
+            "Albert Lastukhin & Sergei Karpeev"
+          ],
+          "urls": [
+            "https://www.xeno-canto.org/209564",
+            "https://xeno-canto.org/209564"
+          ]
+        },
+        {
+          "basename": "XC574864.ogg",
+          "count": 2,
+          "species_assigned": [
+            "brcful1",
+            "putbab1"
+          ],
+          "relative_paths": [
+            "brcful1/XC574864.ogg",
+            "putbab1/XC574864.ogg"
+          ],
+          "authors": [
+            "Rajgopal Patil",
+            "Rajgopal Patil"
+          ],
+          "urls": [
+            "https://www.xeno-canto.org/574864",
+            "https://xeno-canto.org/574864"
+          ]
+        },
+        {
+          "basename": "XC522123.ogg",
+          "count": 2,
+          "species_assigned": [
+            "brfowl1",
+            "sbeowl1"
+          ],
+          "relative_paths": [
+            "brfowl1/XC522123.ogg",
+            "sbeowl1/XC522123.ogg"
+          ],
+          "authors": [
+            "Qin Huang",
+            "Qin Huang"
+          ],
+          "urls": [
+            "https://xeno-canto.org/522123",
+            "https://www.xeno-canto.org/522123"
+          ]
+        },
+        {
+          "basename": "XC503389.ogg",
+          "count": 2,
+          "species_assigned": [
+            "comior1",
+            "whtkin2"
+          ],
+          "relative_paths": [
+            "comior1/XC503389.ogg",
+            "whtkin2/XC503389.ogg"
+          ],
+          "authors": [
+            "Bj\u00f6rn S\u00f6derlund",
+            "Bj\u00f6rn S\u00f6derlund"
+          ],
+          "urls": [
+            "https://xeno-canto.org/503389",
+            "https://www.xeno-canto.org/503389"
+          ]
+        },
+        {
+          "basename": "XC581045.ogg",
+          "count": 2,
+          "species_assigned": [
+            "comsan",
+            "wemhar1"
+          ],
+          "relative_paths": [
+            "comsan/XC581045.ogg",
+            "wemhar1/XC581045.ogg"
+          ],
+          "authors": [
+            "Albert Noorlander",
+            "Albert Noorlander"
+          ],
+          "urls": [
+            "https://xeno-canto.org/581045",
+            "https://www.xeno-canto.org/581045"
+          ]
+        },
+        {
+          "basename": "XC674522.ogg",
+          "count": 2,
+          "species_assigned": [
+            "comtai1",
+            "litspi1"
+          ],
+          "relative_paths": [
+            "comtai1/XC674522.ogg",
+            "litspi1/XC674522.ogg"
+          ],
+          "authors": [
+            "Bram Piot",
+            "Bram Piot"
+          ],
+          "urls": [
+            "http://xeno-canto.org/674522",
+            "https://xeno-canto.org/674522"
+          ]
+        },
+        {
+          "basename": "XC514027.ogg",
+          "count": 2,
+          "species_assigned": [
+            "eucdov",
+            "laudov1"
+          ],
+          "relative_paths": [
+            "eucdov/XC514027.ogg",
+            "laudov1/XC514027.ogg"
+          ],
+          "authors": [
+            "Ramesh Desai",
+            "Ramesh Desai"
+          ],
+          "urls": [
+            "https://www.xeno-canto.org/514027",
+            "https://www.xeno-canto.org/514027"
+          ]
+        },
+        {
+          "basename": "XC467373.ogg",
+          "count": 2,
+          "species_assigned": [
+            "graher1",
+            "purher1"
+          ],
+          "relative_paths": [
+            "graher1/XC467373.ogg",
+            "purher1/XC467373.ogg"
+          ],
+          "authors": [
+            "Louis Sall\u00e9",
+            "Louis Sall\u00e9"
+          ],
+          "urls": [
+            "https://xeno-canto.org/467373",
+            "https://www.xeno-canto.org/467373"
+          ]
+        },
+        {
+          "basename": "XC447036.ogg",
+          "count": 2,
+          "species_assigned": [
+            "houcro1",
+            "labcro1"
+          ],
+          "relative_paths": [
+            "houcro1/XC447036.ogg",
+            "labcro1/XC447036.ogg"
+          ],
+          "authors": [
+            "David Darrell-Lambert",
+            "David Darrell-Lambert"
+          ],
+          "urls": [
+            "https://xeno-canto.org/447036",
+            "https://www.xeno-canto.org/447036"
+          ]
+        },
+        {
+          "basename": "XC659329.ogg",
+          "count": 2,
+          "species_assigned": [
+            "insowl1",
+            "whcbar1"
+          ],
+          "relative_paths": [
+            "insowl1/XC659329.ogg",
+            "whcbar1/XC659329.ogg"
+          ],
+          "authors": [
+            "Dhyey Shah",
+            "Dhyey Shah"
+          ],
+          "urls": [
+            "https://www.xeno-canto.org/659329",
+            "https://xeno-canto.org/659329"
+          ]
+        },
+        {
+          "basename": "XC184466.ogg",
+          "count": 2,
+          "species_assigned": [
+            "marsan",
+            "woosan"
+          ],
+          "relative_paths": [
+            "marsan/XC184466.ogg",
+            "woosan/XC184466.ogg"
+          ],
+          "authors": [
+            "Albert Lastukhin",
+            "Albert Lastukhin"
+          ],
+          "urls": [
+            "https://www.xeno-canto.org/184466",
+            "https://xeno-canto.org/184466"
+          ]
+        },
+        {
+          "basename": "XC239509.ogg",
+          "count": 2,
+          "species_assigned": [
+            "rufwoo2",
+            "whbwoo2"
+          ],
+          "relative_paths": [
+            "rufwoo2/XC239509.ogg",
+            "whbwoo2/XC239509.ogg"
+          ],
+          "authors": [
+            "Dilip KG",
+            "Dilip KG"
+          ],
+          "urls": [
+            "https://xeno-canto.org/239509",
+            "https://www.xeno-canto.org/239509"
+          ]
+        }
+      ],
+      "leakage_risk_warning": "Detected 19 audio recordings shared across multiple species directories. These share identical recording source IDs and must be grouped by recording ID during split creation to prevent cross-validation data leakage."
+    },
+    "8_physical_existence": {
+      "status": "PASS",
+      "total_referenced_files": 24459,
+      "missing_physical_files_count": 0,
+      "missing_files_list": []
+    },
+    "9_audio_decoding": {
+      "status": "PASS",
+      "total_files": 24459,
+      "successfully_decoded": 24459,
+      "failed_decoding": 0
+    },
+    "10_sampling_rate_distribution": {
+      "status": "PASS",
+      "baseline_sample_rate": 32000,
+      "distribution": {
+        "32000": {
+          "count": 24459,
+          "percentage": 100.0,
+          "matches_baseline": true
+        }
+      },
+      "files_matching_baseline_sr": 24459,
+      "files_requiring_resampling": 0,
+      "resampling_percentage": 0.0
+    },
+    "11_duration_distribution": {
+      "status": "PASS",
+      "baseline_window_seconds": 5.0,
+      "summary_statistics": {
+        "min_seconds": 0.47,
+        "max_seconds": 5964.225,
+        "mean_seconds": 41.92,
+        "median_seconds": 22.39,
+        "std_seconds": 104.42,
+        "p05_seconds": 5.33,
+        "p25_seconds": 11.21,
+        "p50_seconds": 22.39,
+        "p75_seconds": 44.67,
+        "p95_seconds": 122.47,
+        "p99_seconds": 300.13,
+        "total_audio_hours": 284.84
+      },
+      "clips_shorter_than_baseline_5s": 929,
+      "clips_shorter_than_baseline_percentage": 3.8,
+      "clips_shorter_than_1s": 19,
+      "clips_longer_than_60s": 4138,
+      "clips_longer_than_120s": 1274,
+      "clips_longer_than_300s": 250
+    },
+    "12_number_of_channels": {
+      "status": "PASS",
+      "distribution": {
+        "1": {
+          "count": 24459,
+          "percentage": 100.0
+        }
+      },
+      "mono_count": 24459,
+      "stereo_count": 0,
+      "downmix_required_count": 0
+    },
+    "13_corrupted_unreadable_audio": {
+      "status": "PASS",
+      "corrupted_files_count": 0,
+      "corrupted_files": []
+    }
+  }
+}

@@ -1,0 +1,2020 @@
+{
+  "timestamp": "2026-10-04T12:02:26.588732",
+  "random_seed": 42,
+  "dataset_root": "C:\\Datasets\\birdclef-2024",
+  "total_metadata_rows": 24459,
+  "total_unique_recordings": 24440,
+  "targets": {
+    "train_ratio": 0.7,
+    "val_ratio": 0.15,
+    "test_ratio": 0.15
+  },
+  "actual_splits": {
+    "train": {
+      "count": 17127,
+      "percentage": 70.02,
+      "unique_species": 182,
+      "unique_recordings": 17108
+    },
+    "val": {
+      "count": 3666,
+      "percentage": 14.99,
+      "unique_species": 182,
+      "unique_recordings": 3666
+    },
+    "test": {
+      "count": 3666,
+      "percentage": 14.99,
+      "unique_species": 182,
+      "unique_recordings": 3666
+    }
+  },
+  "leakage_verification": {
+    "every_recording_assigned": true,
+    "unassigned_count": 0,
+    "recording_id_leakage_detected": false,
+    "leaking_recordings_count": 0,
+    "shared_xc_recordings_total": 19,
+    "shared_xc_recordings_leaking": 0,
+    "shared_recordings_audit": [
+      {
+        "recording_id": "467373",
+        "instances_count": 2,
+        "species": [
+          "graher1",
+          "purher1"
+        ],
+        "assigned_split": "train"
+      },
+      {
+        "recording_id": "209203",
+        "instances_count": 2,
+        "species": [
+          "bladro1",
+          "goflea1"
+        ],
+        "assigned_split": "train"
+      },
+      {
+        "recording_id": "209549",
+        "instances_count": 2,
+        "species": [
+          "bladro1",
+          "goflea1"
+        ],
+        "assigned_split": "train"
+      },
+      {
+        "recording_id": "209564",
+        "instances_count": 2,
+        "species": [
+          "bladro1",
+          "goflea1"
+        ],
+        "assigned_split": "train"
+      },
+      {
+        "recording_id": "574864",
+        "instances_count": 2,
+        "species": [
+          "brcful1",
+          "putbab1"
+        ],
+        "assigned_split": "train"
+      },
+      {
+        "recording_id": "581045",
+        "instances_count": 2,
+        "species": [
+          "comsan",
+          "wemhar1"
+        ],
+        "assigned_split": "train"
+      },
+      {
+        "recording_id": "522123",
+        "instances_count": 2,
+        "species": [
+          "brfowl1",
+          "sbeowl1"
+        ],
+        "assigned_split": "train"
+      },
+      {
+        "recording_id": "503389",
+        "instances_count": 2,
+        "species": [
+          "comior1",
+          "whtkin2"
+        ],
+        "assigned_split": "train"
+      },
+      {
+        "recording_id": "163901",
+        "instances_count": 2,
+        "species": [
+          "bladro1",
+          "goflea1"
+        ],
+        "assigned_split": "train"
+      },
+      {
+        "recording_id": "674522",
+        "instances_count": 2,
+        "species": [
+          "comtai1",
+          "litspi1"
+        ],
+        "assigned_split": "train"
+      },
+      {
+        "recording_id": "514027",
+        "instances_count": 2,
+        "species": [
+          "eucdov",
+          "laudov1"
+        ],
+        "assigned_split": "train"
+      },
+      {
+        "recording_id": "306398",
+        "instances_count": 2,
+        "species": [
+          "bkcbul1",
+          "rewbul"
+        ],
+        "assigned_split": "train"
+      },
+      {
+        "recording_id": "208794",
+        "instances_count": 2,
+        "species": [
+          "bladro1",
+          "goflea1"
+        ],
+        "assigned_split": "train"
+      },
+      {
+        "recording_id": "403621",
+        "instances_count": 2,
+        "species": [
+          "bcnher",
+          "litegr"
+        ],
+        "assigned_split": "train"
+      },
+      {
+        "recording_id": "208795",
+        "instances_count": 2,
+        "species": [
+          "bladro1",
+          "goflea1"
+        ],
+        "assigned_split": "train"
+      },
+      {
+        "recording_id": "447036",
+        "instances_count": 2,
+        "species": [
+          "houcro1",
+          "labcro1"
+        ],
+        "assigned_split": "train"
+      },
+      {
+        "recording_id": "659329",
+        "instances_count": 2,
+        "species": [
+          "insowl1",
+          "whcbar1"
+        ],
+        "assigned_split": "train"
+      },
+      {
+        "recording_id": "184466",
+        "instances_count": 2,
+        "species": [
+          "marsan",
+          "woosan"
+        ],
+        "assigned_split": "train"
+      },
+      {
+        "recording_id": "239509",
+        "instances_count": 2,
+        "species": [
+          "rufwoo2",
+          "whbwoo2"
+        ],
+        "assigned_split": "train"
+      }
+    ]
+  },
+  "species_coverage": {
+    "total_target_species": 182,
+    "species_in_train": 182,
+    "species_in_val": 182,
+    "species_in_test": 182,
+    "all_species_in_all_splits": true,
+    "missing_species_by_split": {
+      "train": [],
+      "val": [],
+      "test": []
+    }
+  },
+  "rare_species_audit": {
+    "species_under_10_samples": {
+      "malwoo1": {
+        "total": 10,
+        "train": 8,
+        "val": 1,
+        "test": 1,
+        "train_pct": 80.0,
+        "val_pct": 10.0,
+        "test_pct": 10.0
+      },
+      "pomgrp2": {
+        "total": 9,
+        "train": 7,
+        "val": 1,
+        "test": 1,
+        "train_pct": 77.8,
+        "val_pct": 11.1,
+        "test_pct": 11.1
+      },
+      "rutfly6": {
+        "total": 8,
+        "train": 6,
+        "val": 1,
+        "test": 1,
+        "train_pct": 75.0,
+        "val_pct": 12.5,
+        "test_pct": 12.5
+      },
+      "nilfly2": {
+        "total": 8,
+        "train": 6,
+        "val": 1,
+        "test": 1,
+        "train_pct": 75.0,
+        "val_pct": 12.5,
+        "test_pct": 12.5
+      },
+      "bncwoo3": {
+        "total": 7,
+        "train": 5,
+        "val": 1,
+        "test": 1,
+        "train_pct": 71.4,
+        "val_pct": 14.3,
+        "test_pct": 14.3
+      },
+      "paisto1": {
+        "total": 7,
+        "train": 5,
+        "val": 1,
+        "test": 1,
+        "train_pct": 71.4,
+        "val_pct": 14.3,
+        "test_pct": 14.3
+      },
+      "wbbfly1": {
+        "total": 7,
+        "train": 5,
+        "val": 1,
+        "test": 1,
+        "train_pct": 71.4,
+        "val_pct": 14.3,
+        "test_pct": 14.3
+      },
+      "darter2": {
+        "total": 7,
+        "train": 5,
+        "val": 1,
+        "test": 1,
+        "train_pct": 71.4,
+        "val_pct": 14.3,
+        "test_pct": 14.3
+      },
+      "blaeag1": {
+        "total": 6,
+        "train": 4,
+        "val": 1,
+        "test": 1,
+        "train_pct": 66.7,
+        "val_pct": 16.7,
+        "test_pct": 16.7
+      },
+      "wynlau1": {
+        "total": 6,
+        "train": 4,
+        "val": 1,
+        "test": 1,
+        "train_pct": 66.7,
+        "val_pct": 16.7,
+        "test_pct": 16.7
+      },
+      "asiope1": {
+        "total": 5,
+        "train": 3,
+        "val": 1,
+        "test": 1,
+        "train_pct": 60.0,
+        "val_pct": 20.0,
+        "test_pct": 20.0
+      },
+      "integr": {
+        "total": 5,
+        "train": 3,
+        "val": 1,
+        "test": 1,
+        "train_pct": 60.0,
+        "val_pct": 20.0,
+        "test_pct": 20.0
+      },
+      "niwpig1": {
+        "total": 5,
+        "train": 3,
+        "val": 1,
+        "test": 1,
+        "train_pct": 60.0,
+        "val_pct": 20.0,
+        "test_pct": 20.0
+      }
+    },
+    "species_under_20_samples_count": 34,
+    "species_under_50_samples_count": 81
+  },
+  "author_and_spatial_audit": {
+    "total_unique_authors": 1942,
+    "authors_spanning_multiple_splits": 918,
+    "total_spatial_coordinates": 24081,
+    "spatial_locations_spanning_multiple_splits": 2189
+  },
+  "stratification_limitations": [
+    {
+      "limitation": "Extreme Few-Shot Sample Indivisibility",
+      "description": "Classes with 5 total recordings (asiope1, integr, niwpig1) cannot be perfectly partitioned at 70.0% / 15.0% / 15.0% (which would require 3.5 / 0.75 / 0.75 recordings). To guarantee that validation and test sets have non-zero true positive support for Macro ROC-AUC evaluation, exactly 3 recordings (60.0%) are allocated to train, 1 recording (20.0%) to validation, and 1 recording (20.0%) to test.",
+      "affected_classes_count": 3,
+      "mitigation": "1 positive sample guaranteed in val and test for all classes."
+    },
+    {
+      "limitation": "Cross-Species Recording Identifier Binding",
+      "description": "19 distinct Xeno-Canto recordings (38 rows in metadata) appear in multiple species directories due to multi-species vocalizations in the source audio. To prevent recording-level data leakage, both species instances of each shared recording are strictly locked into the same split.",
+      "affected_recordings_count": 19,
+      "mitigation": "Atomic grouping by recording_id eliminates cross-split data leakage."
+    },
+    {
+      "limitation": "Author-Level Stratification Impossibility",
+      "description": "A single author (e.g. Jos\u00e9 Carlos Sires) contributed 915 recordings spanning over 100 species. Grouping splits by author makes species stratification mathematically impossible, resulting in complete class absence (0 samples) for rare species in validation folds. Therefore, grouping is strictly enforced at the recording level rather than author level.",
+      "affected_recordings_count": 24459,
+      "mitigation": "Recording-level isolation prevents acoustic file leakage while maintaining 100% species coverage."
+    },
+    {
+      "limitation": "Secondary Label Co-occurrence Multi-label Drift",
+      "description": "Recordings with secondary labels contain incidental bird vocalizations that cannot be jointly optimized with primary labels under standard single-target stratification.",
+      "affected_recordings_count": 1892,
+      "mitigation": "Stratification optimizes primary species targets while preserving realistic background co-occurrences."
+    }
+  ],
+  "per_species_distribution": {
+    "bcnher": {
+      "total": 500,
+      "train": 350,
+      "val": 75,
+      "test": 75,
+      "train_pct": 70.0,
+      "val_pct": 15.0,
+      "test_pct": 15.0
+    },
+    "barswa": {
+      "total": 500,
+      "train": 350,
+      "val": 75,
+      "test": 75,
+      "train_pct": 70.0,
+      "val_pct": 15.0,
+      "test_pct": 15.0
+    },
+    "bkwsti": {
+      "total": 500,
+      "train": 350,
+      "val": 75,
+      "test": 75,
+      "train_pct": 70.0,
+      "val_pct": 15.0,
+      "test_pct": 15.0
+    },
+    "blrwar1": {
+      "total": 500,
+      "train": 350,
+      "val": 75,
+      "test": 75,
+      "train_pct": 70.0,
+      "val_pct": 15.0,
+      "test_pct": 15.0
+    },
+    "comsan": {
+      "total": 500,
+      "train": 350,
+      "val": 75,
+      "test": 75,
+      "train_pct": 70.0,
+      "val_pct": 15.0,
+      "test_pct": 15.0
+    },
+    "comgre": {
+      "total": 500,
+      "train": 350,
+      "val": 75,
+      "test": 75,
+      "train_pct": 70.0,
+      "val_pct": 15.0,
+      "test_pct": 15.0
+    },
+    "eaywag1": {
+      "total": 500,
+      "train": 350,
+      "val": 75,
+      "test": 75,
+      "train_pct": 70.0,
+      "val_pct": 15.0,
+      "test_pct": 15.0
+    },
+    "commoo3": {
+      "total": 500,
+      "train": 350,
+      "val": 75,
+      "test": 75,
+      "train_pct": 70.0,
+      "val_pct": 15.0,
+      "test_pct": 15.0
+    },
+    "comkin1": {
+      "total": 500,
+      "train": 350,
+      "val": 75,
+      "test": 75,
+      "train_pct": 70.0,
+      "val_pct": 15.0,
+      "test_pct": 15.0
+    },
+    "comros": {
+      "total": 500,
+      "train": 350,
+      "val": 75,
+      "test": 75,
+      "train_pct": 70.0,
+      "val_pct": 15.0,
+      "test_pct": 15.0
+    },
+    "zitcis1": {
+      "total": 500,
+      "train": 350,
+      "val": 75,
+      "test": 75,
+      "train_pct": 70.0,
+      "val_pct": 15.0,
+      "test_pct": 15.0
+    },
+    "woosan": {
+      "total": 500,
+      "train": 350,
+      "val": 75,
+      "test": 75,
+      "train_pct": 70.0,
+      "val_pct": 15.0,
+      "test_pct": 15.0
+    },
+    "litgre1": {
+      "total": 500,
+      "train": 350,
+      "val": 75,
+      "test": 75,
+      "train_pct": 70.0,
+      "val_pct": 15.0,
+      "test_pct": 15.0
+    },
+    "lirplo": {
+      "total": 500,
+      "train": 350,
+      "val": 75,
+      "test": 75,
+      "train_pct": 70.0,
+      "val_pct": 15.0,
+      "test_pct": 15.0
+    },
+    "grewar3": {
+      "total": 500,
+      "train": 350,
+      "val": 75,
+      "test": 75,
+      "train_pct": 70.0,
+      "val_pct": 15.0,
+      "test_pct": 15.0
+    },
+    "grnsan": {
+      "total": 500,
+      "train": 350,
+      "val": 75,
+      "test": 75,
+      "train_pct": 70.0,
+      "val_pct": 15.0,
+      "test_pct": 15.0
+    },
+    "grywag": {
+      "total": 500,
+      "train": 350,
+      "val": 75,
+      "test": 75,
+      "train_pct": 70.0,
+      "val_pct": 15.0,
+      "test_pct": 15.0
+    },
+    "hoopoe": {
+      "total": 500,
+      "train": 350,
+      "val": 75,
+      "test": 75,
+      "train_pct": 70.0,
+      "val_pct": 15.0,
+      "test_pct": 15.0
+    },
+    "houspa": {
+      "total": 500,
+      "train": 350,
+      "val": 75,
+      "test": 75,
+      "train_pct": 70.0,
+      "val_pct": 15.0,
+      "test_pct": 15.0
+    },
+    "graher1": {
+      "total": 500,
+      "train": 350,
+      "val": 75,
+      "test": 75,
+      "train_pct": 70.0,
+      "val_pct": 15.0,
+      "test_pct": 15.0
+    },
+    "eurcoo": {
+      "total": 500,
+      "train": 350,
+      "val": 75,
+      "test": 75,
+      "train_pct": 70.0,
+      "val_pct": 15.0,
+      "test_pct": 15.0
+    },
+    "eucdov": {
+      "total": 500,
+      "train": 350,
+      "val": 75,
+      "test": 75,
+      "train_pct": 70.0,
+      "val_pct": 15.0,
+      "test_pct": 15.0
+    },
+    "rorpar": {
+      "total": 420,
+      "train": 294,
+      "val": 63,
+      "test": 63,
+      "train_pct": 70.0,
+      "val_pct": 15.0,
+      "test_pct": 15.0
+    },
+    "litegr": {
+      "total": 405,
+      "train": 283,
+      "val": 61,
+      "test": 61,
+      "train_pct": 69.9,
+      "val_pct": 15.1,
+      "test_pct": 15.1
+    },
+    "comtai1": {
+      "total": 302,
+      "train": 212,
+      "val": 45,
+      "test": 45,
+      "train_pct": 70.2,
+      "val_pct": 14.9,
+      "test_pct": 14.9
+    },
+    "grtdro1": {
+      "total": 278,
+      "train": 194,
+      "val": 42,
+      "test": 42,
+      "train_pct": 69.8,
+      "val_pct": 15.1,
+      "test_pct": 15.1
+    },
+    "greegr": {
+      "total": 276,
+      "train": 194,
+      "val": 41,
+      "test": 41,
+      "train_pct": 70.3,
+      "val_pct": 14.9,
+      "test_pct": 14.9
+    },
+    "asikoe2": {
+      "total": 275,
+      "train": 193,
+      "val": 41,
+      "test": 41,
+      "train_pct": 70.2,
+      "val_pct": 14.9,
+      "test_pct": 14.9
+    },
+    "purher1": {
+      "total": 274,
+      "train": 192,
+      "val": 41,
+      "test": 41,
+      "train_pct": 70.1,
+      "val_pct": 15.0,
+      "test_pct": 15.0
+    },
+    "wemhar1": {
+      "total": 273,
+      "train": 191,
+      "val": 41,
+      "test": 41,
+      "train_pct": 70.0,
+      "val_pct": 15.0,
+      "test_pct": 15.0
+    },
+    "kenplo1": {
+      "total": 271,
+      "train": 189,
+      "val": 41,
+      "test": 41,
+      "train_pct": 69.7,
+      "val_pct": 15.1,
+      "test_pct": 15.1
+    },
+    "bkskit1": {
+      "total": 268,
+      "train": 188,
+      "val": 40,
+      "test": 40,
+      "train_pct": 70.1,
+      "val_pct": 14.9,
+      "test_pct": 14.9
+    },
+    "commyn": {
+      "total": 237,
+      "train": 165,
+      "val": 36,
+      "test": 36,
+      "train_pct": 69.6,
+      "val_pct": 15.2,
+      "test_pct": 15.2
+    },
+    "labcro1": {
+      "total": 235,
+      "train": 165,
+      "val": 35,
+      "test": 35,
+      "train_pct": 70.2,
+      "val_pct": 14.9,
+      "test_pct": 14.9
+    },
+    "blakit1": {
+      "total": 231,
+      "train": 161,
+      "val": 35,
+      "test": 35,
+      "train_pct": 69.7,
+      "val_pct": 15.2,
+      "test_pct": 15.2
+    },
+    "whiter2": {
+      "total": 226,
+      "train": 158,
+      "val": 34,
+      "test": 34,
+      "train_pct": 69.9,
+      "val_pct": 15.0,
+      "test_pct": 15.0
+    },
+    "putbab1": {
+      "total": 224,
+      "train": 156,
+      "val": 34,
+      "test": 34,
+      "train_pct": 69.6,
+      "val_pct": 15.2,
+      "test_pct": 15.2
+    },
+    "comior1": {
+      "total": 219,
+      "train": 153,
+      "val": 33,
+      "test": 33,
+      "train_pct": 69.9,
+      "val_pct": 15.1,
+      "test_pct": 15.1
+    },
+    "gyhcaf1": {
+      "total": 217,
+      "train": 151,
+      "val": 33,
+      "test": 33,
+      "train_pct": 69.6,
+      "val_pct": 15.2,
+      "test_pct": 15.2
+    },
+    "categr": {
+      "total": 210,
+      "train": 146,
+      "val": 32,
+      "test": 32,
+      "train_pct": 69.5,
+      "val_pct": 15.2,
+      "test_pct": 15.2
+    },
+    "rocpig": {
+      "total": 201,
+      "train": 141,
+      "val": 30,
+      "test": 30,
+      "train_pct": 70.1,
+      "val_pct": 14.9,
+      "test_pct": 14.9
+    },
+    "rerswa1": {
+      "total": 198,
+      "train": 138,
+      "val": 30,
+      "test": 30,
+      "train_pct": 69.7,
+      "val_pct": 15.2,
+      "test_pct": 15.2
+    },
+    "rewbul": {
+      "total": 189,
+      "train": 133,
+      "val": 28,
+      "test": 28,
+      "train_pct": 70.4,
+      "val_pct": 14.8,
+      "test_pct": 14.8
+    },
+    "whtkin2": {
+      "total": 185,
+      "train": 129,
+      "val": 28,
+      "test": 28,
+      "train_pct": 69.7,
+      "val_pct": 15.1,
+      "test_pct": 15.1
+    },
+    "blnmon1": {
+      "total": 173,
+      "train": 121,
+      "val": 26,
+      "test": 26,
+      "train_pct": 69.9,
+      "val_pct": 15.0,
+      "test_pct": 15.0
+    },
+    "whbwat1": {
+      "total": 167,
+      "train": 117,
+      "val": 25,
+      "test": 25,
+      "train_pct": 70.1,
+      "val_pct": 15.0,
+      "test_pct": 15.0
+    },
+    "gargan": {
+      "total": 163,
+      "train": 115,
+      "val": 24,
+      "test": 24,
+      "train_pct": 70.6,
+      "val_pct": 14.7,
+      "test_pct": 14.7
+    },
+    "grecou1": {
+      "total": 163,
+      "train": 115,
+      "val": 24,
+      "test": 24,
+      "train_pct": 70.6,
+      "val_pct": 14.7,
+      "test_pct": 14.7
+    },
+    "plapri1": {
+      "total": 155,
+      "train": 109,
+      "val": 23,
+      "test": 23,
+      "train_pct": 70.3,
+      "val_pct": 14.8,
+      "test_pct": 14.8
+    },
+    "spodov": {
+      "total": 155,
+      "train": 109,
+      "val": 23,
+      "test": 23,
+      "train_pct": 70.3,
+      "val_pct": 14.8,
+      "test_pct": 14.8
+    },
+    "crseag1": {
+      "total": 153,
+      "train": 107,
+      "val": 23,
+      "test": 23,
+      "train_pct": 69.9,
+      "val_pct": 15.0,
+      "test_pct": 15.0
+    },
+    "brnshr": {
+      "total": 150,
+      "train": 106,
+      "val": 22,
+      "test": 22,
+      "train_pct": 70.7,
+      "val_pct": 14.7,
+      "test_pct": 14.7
+    },
+    "grnwar1": {
+      "total": 142,
+      "train": 100,
+      "val": 21,
+      "test": 21,
+      "train_pct": 70.4,
+      "val_pct": 14.8,
+      "test_pct": 14.8
+    },
+    "blhori1": {
+      "total": 141,
+      "train": 99,
+      "val": 21,
+      "test": 21,
+      "train_pct": 70.2,
+      "val_pct": 14.9,
+      "test_pct": 14.9
+    },
+    "houcro1": {
+      "total": 139,
+      "train": 97,
+      "val": 21,
+      "test": 21,
+      "train_pct": 69.8,
+      "val_pct": 15.1,
+      "test_pct": 15.1
+    },
+    "piekin1": {
+      "total": 137,
+      "train": 95,
+      "val": 21,
+      "test": 21,
+      "train_pct": 69.3,
+      "val_pct": 15.3,
+      "test_pct": 15.3
+    },
+    "rewlap1": {
+      "total": 135,
+      "train": 95,
+      "val": 20,
+      "test": 20,
+      "train_pct": 70.4,
+      "val_pct": 14.8,
+      "test_pct": 14.8
+    },
+    "ruftre2": {
+      "total": 127,
+      "train": 89,
+      "val": 19,
+      "test": 19,
+      "train_pct": 70.1,
+      "val_pct": 15.0,
+      "test_pct": 15.0
+    },
+    "bladro1": {
+      "total": 125,
+      "train": 87,
+      "val": 19,
+      "test": 19,
+      "train_pct": 69.6,
+      "val_pct": 15.2,
+      "test_pct": 15.2
+    },
+    "pursun4": {
+      "total": 125,
+      "train": 87,
+      "val": 19,
+      "test": 19,
+      "train_pct": 69.6,
+      "val_pct": 15.2,
+      "test_pct": 15.2
+    },
+    "copbar1": {
+      "total": 124,
+      "train": 86,
+      "val": 19,
+      "test": 19,
+      "train_pct": 69.4,
+      "val_pct": 15.3,
+      "test_pct": 15.3
+    },
+    "litspi1": {
+      "total": 123,
+      "train": 87,
+      "val": 18,
+      "test": 18,
+      "train_pct": 70.7,
+      "val_pct": 14.6,
+      "test_pct": 14.6
+    },
+    "brnhao1": {
+      "total": 122,
+      "train": 86,
+      "val": 18,
+      "test": 18,
+      "train_pct": 70.5,
+      "val_pct": 14.8,
+      "test_pct": 14.8
+    },
+    "stbkin1": {
+      "total": 122,
+      "train": 86,
+      "val": 18,
+      "test": 18,
+      "train_pct": 70.5,
+      "val_pct": 14.8,
+      "test_pct": 14.8
+    },
+    "nutman": {
+      "total": 115,
+      "train": 81,
+      "val": 17,
+      "test": 17,
+      "train_pct": 70.4,
+      "val_pct": 14.8,
+      "test_pct": 14.8
+    },
+    "gybpri1": {
+      "total": 115,
+      "train": 81,
+      "val": 17,
+      "test": 17,
+      "train_pct": 70.4,
+      "val_pct": 14.8,
+      "test_pct": 14.8
+    },
+    "brodro1": {
+      "total": 114,
+      "train": 80,
+      "val": 17,
+      "test": 17,
+      "train_pct": 70.2,
+      "val_pct": 14.9,
+      "test_pct": 14.9
+    },
+    "laudov1": {
+      "total": 113,
+      "train": 79,
+      "val": 17,
+      "test": 17,
+      "train_pct": 69.9,
+      "val_pct": 15.0,
+      "test_pct": 15.0
+    },
+    "ashdro1": {
+      "total": 109,
+      "train": 77,
+      "val": 16,
+      "test": 16,
+      "train_pct": 70.6,
+      "val_pct": 14.7,
+      "test_pct": 14.7
+    },
+    "gloibi": {
+      "total": 107,
+      "train": 75,
+      "val": 16,
+      "test": 16,
+      "train_pct": 70.1,
+      "val_pct": 15.0,
+      "test_pct": 15.0
+    },
+    "asbfly": {
+      "total": 105,
+      "train": 73,
+      "val": 16,
+      "test": 16,
+      "train_pct": 69.5,
+      "val_pct": 15.2,
+      "test_pct": 15.2
+    },
+    "tibfly3": {
+      "total": 104,
+      "train": 72,
+      "val": 16,
+      "test": 16,
+      "train_pct": 69.2,
+      "val_pct": 15.4,
+      "test_pct": 15.4
+    },
+    "thbwar1": {
+      "total": 102,
+      "train": 72,
+      "val": 15,
+      "test": 15,
+      "train_pct": 70.6,
+      "val_pct": 14.7,
+      "test_pct": 14.7
+    },
+    "revbul": {
+      "total": 101,
+      "train": 71,
+      "val": 15,
+      "test": 15,
+      "train_pct": 70.3,
+      "val_pct": 14.9,
+      "test_pct": 14.9
+    },
+    "ashpri1": {
+      "total": 96,
+      "train": 68,
+      "val": 14,
+      "test": 14,
+      "train_pct": 70.8,
+      "val_pct": 14.6,
+      "test_pct": 14.6
+    },
+    "shikra1": {
+      "total": 96,
+      "train": 68,
+      "val": 14,
+      "test": 14,
+      "train_pct": 70.8,
+      "val_pct": 14.6,
+      "test_pct": 14.6
+    },
+    "marsan": {
+      "total": 92,
+      "train": 64,
+      "val": 14,
+      "test": 14,
+      "train_pct": 69.6,
+      "val_pct": 15.2,
+      "test_pct": 15.2
+    },
+    "lblwar1": {
+      "total": 90,
+      "train": 62,
+      "val": 14,
+      "test": 14,
+      "train_pct": 68.9,
+      "val_pct": 15.6,
+      "test_pct": 15.6
+    },
+    "piebus1": {
+      "total": 89,
+      "train": 63,
+      "val": 13,
+      "test": 13,
+      "train_pct": 70.8,
+      "val_pct": 14.6,
+      "test_pct": 14.6
+    },
+    "brcful1": {
+      "total": 86,
+      "train": 60,
+      "val": 13,
+      "test": 13,
+      "train_pct": 69.8,
+      "val_pct": 15.1,
+      "test_pct": 15.1
+    },
+    "brwowl1": {
+      "total": 79,
+      "train": 55,
+      "val": 12,
+      "test": 12,
+      "train_pct": 69.6,
+      "val_pct": 15.2,
+      "test_pct": 15.2
+    },
+    "junbab2": {
+      "total": 79,
+      "train": 55,
+      "val": 12,
+      "test": 12,
+      "train_pct": 69.6,
+      "val_pct": 15.2,
+      "test_pct": 15.2
+    },
+    "litswi1": {
+      "total": 77,
+      "train": 53,
+      "val": 12,
+      "test": 12,
+      "train_pct": 68.8,
+      "val_pct": 15.6,
+      "test_pct": 15.6
+    },
+    "cohcuc1": {
+      "total": 76,
+      "train": 54,
+      "val": 11,
+      "test": 11,
+      "train_pct": 71.1,
+      "val_pct": 14.5,
+      "test_pct": 14.5
+    },
+    "whbwoo2": {
+      "total": 75,
+      "train": 53,
+      "val": 11,
+      "test": 11,
+      "train_pct": 70.7,
+      "val_pct": 14.7,
+      "test_pct": 14.7
+    },
+    "oripip1": {
+      "total": 71,
+      "train": 49,
+      "val": 11,
+      "test": 11,
+      "train_pct": 69.0,
+      "val_pct": 15.5,
+      "test_pct": 15.5
+    },
+    "compea": {
+      "total": 70,
+      "train": 50,
+      "val": 10,
+      "test": 10,
+      "train_pct": 71.4,
+      "val_pct": 14.3,
+      "test_pct": 14.3
+    },
+    "grbeat1": {
+      "total": 67,
+      "train": 47,
+      "val": 10,
+      "test": 10,
+      "train_pct": 70.1,
+      "val_pct": 14.9,
+      "test_pct": 14.9
+    },
+    "whrmun": {
+      "total": 63,
+      "train": 45,
+      "val": 9,
+      "test": 9,
+      "train_pct": 71.4,
+      "val_pct": 14.3,
+      "test_pct": 14.3
+    },
+    "insbab1": {
+      "total": 63,
+      "train": 45,
+      "val": 9,
+      "test": 9,
+      "train_pct": 71.4,
+      "val_pct": 14.3,
+      "test_pct": 14.3
+    },
+    "indpit1": {
+      "total": 61,
+      "train": 43,
+      "val": 9,
+      "test": 9,
+      "train_pct": 70.5,
+      "val_pct": 14.8,
+      "test_pct": 14.8
+    },
+    "rossta2": {
+      "total": 60,
+      "train": 42,
+      "val": 9,
+      "test": 9,
+      "train_pct": 70.0,
+      "val_pct": 15.0,
+      "test_pct": 15.0
+    },
+    "inbrob1": {
+      "total": 59,
+      "train": 41,
+      "val": 9,
+      "test": 9,
+      "train_pct": 69.5,
+      "val_pct": 15.3,
+      "test_pct": 15.3
+    },
+    "grefla1": {
+      "total": 58,
+      "train": 40,
+      "val": 9,
+      "test": 9,
+      "train_pct": 69.0,
+      "val_pct": 15.5,
+      "test_pct": 15.5
+    },
+    "btbeat1": {
+      "total": 57,
+      "train": 39,
+      "val": 9,
+      "test": 9,
+      "train_pct": 68.4,
+      "val_pct": 15.8,
+      "test_pct": 15.8
+    },
+    "whcbar1": {
+      "total": 56,
+      "train": 40,
+      "val": 8,
+      "test": 8,
+      "train_pct": 71.4,
+      "val_pct": 14.3,
+      "test_pct": 14.3
+    },
+    "pursun3": {
+      "total": 56,
+      "train": 40,
+      "val": 8,
+      "test": 8,
+      "train_pct": 71.4,
+      "val_pct": 14.3,
+      "test_pct": 14.3
+    },
+    "gryfra": {
+      "total": 56,
+      "train": 40,
+      "val": 8,
+      "test": 8,
+      "train_pct": 71.4,
+      "val_pct": 14.3,
+      "test_pct": 14.3
+    },
+    "emedov2": {
+      "total": 53,
+      "train": 37,
+      "val": 8,
+      "test": 8,
+      "train_pct": 69.8,
+      "val_pct": 15.1,
+      "test_pct": 15.1
+    },
+    "whbbul2": {
+      "total": 52,
+      "train": 36,
+      "val": 8,
+      "test": 8,
+      "train_pct": 69.2,
+      "val_pct": 15.4,
+      "test_pct": 15.4
+    },
+    "grejun2": {
+      "total": 51,
+      "train": 35,
+      "val": 8,
+      "test": 8,
+      "train_pct": 68.6,
+      "val_pct": 15.7,
+      "test_pct": 15.7
+    },
+    "rufwoo2": {
+      "total": 49,
+      "train": 35,
+      "val": 7,
+      "test": 7,
+      "train_pct": 71.4,
+      "val_pct": 14.3,
+      "test_pct": 14.3
+    },
+    "junowl1": {
+      "total": 49,
+      "train": 35,
+      "val": 7,
+      "test": 7,
+      "train_pct": 71.4,
+      "val_pct": 14.3,
+      "test_pct": 14.3
+    },
+    "pabflo1": {
+      "total": 47,
+      "train": 33,
+      "val": 7,
+      "test": 7,
+      "train_pct": 70.2,
+      "val_pct": 14.9,
+      "test_pct": 14.9
+    },
+    "goflea1": {
+      "total": 46,
+      "train": 32,
+      "val": 7,
+      "test": 7,
+      "train_pct": 69.6,
+      "val_pct": 15.2,
+      "test_pct": 15.2
+    },
+    "mawthr1": {
+      "total": 46,
+      "train": 32,
+      "val": 7,
+      "test": 7,
+      "train_pct": 69.6,
+      "val_pct": 15.2,
+      "test_pct": 15.2
+    },
+    "ashwoo2": {
+      "total": 45,
+      "train": 31,
+      "val": 7,
+      "test": 7,
+      "train_pct": 68.9,
+      "val_pct": 15.6,
+      "test_pct": 15.6
+    },
+    "spepic1": {
+      "total": 45,
+      "train": 31,
+      "val": 7,
+      "test": 7,
+      "train_pct": 68.9,
+      "val_pct": 15.6,
+      "test_pct": 15.6
+    },
+    "indrob1": {
+      "total": 44,
+      "train": 30,
+      "val": 7,
+      "test": 7,
+      "train_pct": 68.2,
+      "val_pct": 15.9,
+      "test_pct": 15.9
+    },
+    "brakit1": {
+      "total": 44,
+      "train": 30,
+      "val": 7,
+      "test": 7,
+      "train_pct": 68.2,
+      "val_pct": 15.9,
+      "test_pct": 15.9
+    },
+    "forwag1": {
+      "total": 44,
+      "train": 30,
+      "val": 7,
+      "test": 7,
+      "train_pct": 68.2,
+      "val_pct": 15.9,
+      "test_pct": 15.9
+    },
+    "sohmyn1": {
+      "total": 42,
+      "train": 30,
+      "val": 6,
+      "test": 6,
+      "train_pct": 71.4,
+      "val_pct": 14.3,
+      "test_pct": 14.3
+    },
+    "grenig1": {
+      "total": 41,
+      "train": 29,
+      "val": 6,
+      "test": 6,
+      "train_pct": 70.7,
+      "val_pct": 14.6,
+      "test_pct": 14.6
+    },
+    "orihob2": {
+      "total": 41,
+      "train": 29,
+      "val": 6,
+      "test": 6,
+      "train_pct": 70.7,
+      "val_pct": 14.6,
+      "test_pct": 14.6
+    },
+    "vefnut1": {
+      "total": 41,
+      "train": 29,
+      "val": 6,
+      "test": 6,
+      "train_pct": 70.7,
+      "val_pct": 14.6,
+      "test_pct": 14.6
+    },
+    "ingori1": {
+      "total": 40,
+      "train": 28,
+      "val": 6,
+      "test": 6,
+      "train_pct": 70.0,
+      "val_pct": 15.0,
+      "test_pct": 15.0
+    },
+    "cregos1": {
+      "total": 40,
+      "train": 28,
+      "val": 6,
+      "test": 6,
+      "train_pct": 70.0,
+      "val_pct": 15.0,
+      "test_pct": 15.0
+    },
+    "purswa3": {
+      "total": 39,
+      "train": 27,
+      "val": 6,
+      "test": 6,
+      "train_pct": 69.2,
+      "val_pct": 15.4,
+      "test_pct": 15.4
+    },
+    "placuc3": {
+      "total": 38,
+      "train": 26,
+      "val": 6,
+      "test": 6,
+      "train_pct": 68.4,
+      "val_pct": 15.8,
+      "test_pct": 15.8
+    },
+    "grehor1": {
+      "total": 37,
+      "train": 25,
+      "val": 6,
+      "test": 6,
+      "train_pct": 67.6,
+      "val_pct": 16.2,
+      "test_pct": 16.2
+    },
+    "vehpar1": {
+      "total": 36,
+      "train": 26,
+      "val": 5,
+      "test": 5,
+      "train_pct": 72.2,
+      "val_pct": 13.9,
+      "test_pct": 13.9
+    },
+    "insowl1": {
+      "total": 36,
+      "train": 26,
+      "val": 5,
+      "test": 5,
+      "train_pct": 72.2,
+      "val_pct": 13.9,
+      "test_pct": 13.9
+    },
+    "indrol2": {
+      "total": 35,
+      "train": 25,
+      "val": 5,
+      "test": 5,
+      "train_pct": 71.4,
+      "val_pct": 14.3,
+      "test_pct": 14.3
+    },
+    "spoowl1": {
+      "total": 35,
+      "train": 25,
+      "val": 5,
+      "test": 5,
+      "train_pct": 71.4,
+      "val_pct": 14.3,
+      "test_pct": 14.3
+    },
+    "whbwag1": {
+      "total": 34,
+      "train": 24,
+      "val": 5,
+      "test": 5,
+      "train_pct": 70.6,
+      "val_pct": 14.7,
+      "test_pct": 14.7
+    },
+    "lewduc1": {
+      "total": 33,
+      "train": 23,
+      "val": 5,
+      "test": 5,
+      "train_pct": 69.7,
+      "val_pct": 15.2,
+      "test_pct": 15.2
+    },
+    "comfla1": {
+      "total": 32,
+      "train": 22,
+      "val": 5,
+      "test": 5,
+      "train_pct": 68.8,
+      "val_pct": 15.6,
+      "test_pct": 15.6
+    },
+    "bwfshr1": {
+      "total": 31,
+      "train": 21,
+      "val": 5,
+      "test": 5,
+      "train_pct": 67.7,
+      "val_pct": 16.1,
+      "test_pct": 16.1
+    },
+    "maghor2": {
+      "total": 30,
+      "train": 22,
+      "val": 4,
+      "test": 4,
+      "train_pct": 73.3,
+      "val_pct": 13.3,
+      "test_pct": 13.3
+    },
+    "yebbul3": {
+      "total": 30,
+      "train": 22,
+      "val": 4,
+      "test": 4,
+      "train_pct": 73.3,
+      "val_pct": 13.3,
+      "test_pct": 13.3
+    },
+    "bkrfla1": {
+      "total": 29,
+      "train": 21,
+      "val": 4,
+      "test": 4,
+      "train_pct": 72.4,
+      "val_pct": 13.8,
+      "test_pct": 13.8
+    },
+    "yebbab1": {
+      "total": 28,
+      "train": 20,
+      "val": 4,
+      "test": 4,
+      "train_pct": 71.4,
+      "val_pct": 14.3,
+      "test_pct": 14.3
+    },
+    "plhpar1": {
+      "total": 28,
+      "train": 20,
+      "val": 4,
+      "test": 4,
+      "train_pct": 71.4,
+      "val_pct": 14.3,
+      "test_pct": 14.3
+    },
+    "moipig1": {
+      "total": 27,
+      "train": 19,
+      "val": 4,
+      "test": 4,
+      "train_pct": 70.4,
+      "val_pct": 14.8,
+      "test_pct": 14.8
+    },
+    "aspswi1": {
+      "total": 26,
+      "train": 18,
+      "val": 4,
+      "test": 4,
+      "train_pct": 69.2,
+      "val_pct": 15.4,
+      "test_pct": 15.4
+    },
+    "aspfly1": {
+      "total": 26,
+      "train": 18,
+      "val": 4,
+      "test": 4,
+      "train_pct": 69.2,
+      "val_pct": 15.4,
+      "test_pct": 15.4
+    },
+    "sbeowl1": {
+      "total": 25,
+      "train": 17,
+      "val": 4,
+      "test": 4,
+      "train_pct": 68.0,
+      "val_pct": 16.0,
+      "test_pct": 16.0
+    },
+    "eurbla2": {
+      "total": 24,
+      "train": 16,
+      "val": 4,
+      "test": 4,
+      "train_pct": 66.7,
+      "val_pct": 16.7,
+      "test_pct": 16.7
+    },
+    "crbsun2": {
+      "total": 24,
+      "train": 16,
+      "val": 4,
+      "test": 4,
+      "train_pct": 66.7,
+      "val_pct": 16.7,
+      "test_pct": 16.7
+    },
+    "sqtbul1": {
+      "total": 24,
+      "train": 16,
+      "val": 4,
+      "test": 4,
+      "train_pct": 66.7,
+      "val_pct": 16.7,
+      "test_pct": 16.7
+    },
+    "bkcbul1": {
+      "total": 24,
+      "train": 16,
+      "val": 4,
+      "test": 4,
+      "train_pct": 66.7,
+      "val_pct": 16.7,
+      "test_pct": 16.7
+    },
+    "whbsho3": {
+      "total": 22,
+      "train": 16,
+      "val": 3,
+      "test": 3,
+      "train_pct": 72.7,
+      "val_pct": 13.6,
+      "test_pct": 13.6
+    },
+    "heswoo1": {
+      "total": 22,
+      "train": 16,
+      "val": 3,
+      "test": 3,
+      "train_pct": 72.7,
+      "val_pct": 13.6,
+      "test_pct": 13.6
+    },
+    "chbeat1": {
+      "total": 22,
+      "train": 16,
+      "val": 3,
+      "test": 3,
+      "train_pct": 72.7,
+      "val_pct": 13.6,
+      "test_pct": 13.6
+    },
+    "dafbab1": {
+      "total": 22,
+      "train": 16,
+      "val": 3,
+      "test": 3,
+      "train_pct": 72.7,
+      "val_pct": 13.6,
+      "test_pct": 13.6
+    },
+    "lesyel1": {
+      "total": 22,
+      "train": 16,
+      "val": 3,
+      "test": 3,
+      "train_pct": 72.7,
+      "val_pct": 13.6,
+      "test_pct": 13.6
+    },
+    "whbtre1": {
+      "total": 21,
+      "train": 15,
+      "val": 3,
+      "test": 3,
+      "train_pct": 71.4,
+      "val_pct": 14.3,
+      "test_pct": 14.3
+    },
+    "tilwar1": {
+      "total": 21,
+      "train": 15,
+      "val": 3,
+      "test": 3,
+      "train_pct": 71.4,
+      "val_pct": 14.3,
+      "test_pct": 14.3
+    },
+    "barfly1": {
+      "total": 20,
+      "train": 14,
+      "val": 3,
+      "test": 3,
+      "train_pct": 70.0,
+      "val_pct": 15.0,
+      "test_pct": 15.0
+    },
+    "brwjac1": {
+      "total": 20,
+      "train": 14,
+      "val": 3,
+      "test": 3,
+      "train_pct": 70.0,
+      "val_pct": 15.0,
+      "test_pct": 15.0
+    },
+    "smamin1": {
+      "total": 20,
+      "train": 14,
+      "val": 3,
+      "test": 3,
+      "train_pct": 70.0,
+      "val_pct": 15.0,
+      "test_pct": 15.0
+    },
+    "malpar1": {
+      "total": 20,
+      "train": 14,
+      "val": 3,
+      "test": 3,
+      "train_pct": 70.0,
+      "val_pct": 15.0,
+      "test_pct": 15.0
+    },
+    "lobsun2": {
+      "total": 20,
+      "train": 14,
+      "val": 3,
+      "test": 3,
+      "train_pct": 70.0,
+      "val_pct": 15.0,
+      "test_pct": 15.0
+    },
+    "grynig2": {
+      "total": 20,
+      "train": 14,
+      "val": 3,
+      "test": 3,
+      "train_pct": 70.0,
+      "val_pct": 15.0,
+      "test_pct": 15.0
+    },
+    "plaflo1": {
+      "total": 20,
+      "train": 14,
+      "val": 3,
+      "test": 3,
+      "train_pct": 70.0,
+      "val_pct": 15.0,
+      "test_pct": 15.0
+    },
+    "sttwoo1": {
+      "total": 20,
+      "train": 14,
+      "val": 3,
+      "test": 3,
+      "train_pct": 70.0,
+      "val_pct": 15.0,
+      "test_pct": 15.0
+    },
+    "jerbus2": {
+      "total": 19,
+      "train": 13,
+      "val": 3,
+      "test": 3,
+      "train_pct": 68.4,
+      "val_pct": 15.8,
+      "test_pct": 15.8
+    },
+    "brfowl1": {
+      "total": 17,
+      "train": 11,
+      "val": 3,
+      "test": 3,
+      "train_pct": 64.7,
+      "val_pct": 17.6,
+      "test_pct": 17.6
+    },
+    "rufbab3": {
+      "total": 17,
+      "train": 11,
+      "val": 3,
+      "test": 3,
+      "train_pct": 64.7,
+      "val_pct": 17.6,
+      "test_pct": 17.6
+    },
+    "maltro1": {
+      "total": 17,
+      "train": 11,
+      "val": 3,
+      "test": 3,
+      "train_pct": 64.7,
+      "val_pct": 17.6,
+      "test_pct": 17.6
+    },
+    "isbduc1": {
+      "total": 16,
+      "train": 12,
+      "val": 2,
+      "test": 2,
+      "train_pct": 75.0,
+      "val_pct": 12.5,
+      "test_pct": 12.5
+    },
+    "redspu1": {
+      "total": 16,
+      "train": 12,
+      "val": 2,
+      "test": 2,
+      "train_pct": 75.0,
+      "val_pct": 12.5,
+      "test_pct": 12.5
+    },
+    "junmyn1": {
+      "total": 15,
+      "train": 11,
+      "val": 2,
+      "test": 2,
+      "train_pct": 73.3,
+      "val_pct": 13.3,
+      "test_pct": 13.3
+    },
+    "kerlau2": {
+      "total": 14,
+      "train": 10,
+      "val": 2,
+      "test": 2,
+      "train_pct": 71.4,
+      "val_pct": 14.3,
+      "test_pct": 14.3
+    },
+    "brasta1": {
+      "total": 13,
+      "train": 9,
+      "val": 2,
+      "test": 2,
+      "train_pct": 69.2,
+      "val_pct": 15.4,
+      "test_pct": 15.4
+    },
+    "crfbar1": {
+      "total": 13,
+      "train": 9,
+      "val": 2,
+      "test": 2,
+      "train_pct": 69.2,
+      "val_pct": 15.4,
+      "test_pct": 15.4
+    },
+    "inpher1": {
+      "total": 13,
+      "train": 9,
+      "val": 2,
+      "test": 2,
+      "train_pct": 69.2,
+      "val_pct": 15.4,
+      "test_pct": 15.4
+    },
+    "scamin3": {
+      "total": 12,
+      "train": 8,
+      "val": 2,
+      "test": 2,
+      "train_pct": 66.7,
+      "val_pct": 16.7,
+      "test_pct": 16.7
+    },
+    "indtit1": {
+      "total": 12,
+      "train": 8,
+      "val": 2,
+      "test": 2,
+      "train_pct": 66.7,
+      "val_pct": 16.7,
+      "test_pct": 16.7
+    },
+    "malwoo1": {
+      "total": 10,
+      "train": 8,
+      "val": 1,
+      "test": 1,
+      "train_pct": 80.0,
+      "val_pct": 10.0,
+      "test_pct": 10.0
+    },
+    "pomgrp2": {
+      "total": 9,
+      "train": 7,
+      "val": 1,
+      "test": 1,
+      "train_pct": 77.8,
+      "val_pct": 11.1,
+      "test_pct": 11.1
+    },
+    "rutfly6": {
+      "total": 8,
+      "train": 6,
+      "val": 1,
+      "test": 1,
+      "train_pct": 75.0,
+      "val_pct": 12.5,
+      "test_pct": 12.5
+    },
+    "nilfly2": {
+      "total": 8,
+      "train": 6,
+      "val": 1,
+      "test": 1,
+      "train_pct": 75.0,
+      "val_pct": 12.5,
+      "test_pct": 12.5
+    },
+    "bncwoo3": {
+      "total": 7,
+      "train": 5,
+      "val": 1,
+      "test": 1,
+      "train_pct": 71.4,
+      "val_pct": 14.3,
+      "test_pct": 14.3
+    },
+    "paisto1": {
+      "total": 7,
+      "train": 5,
+      "val": 1,
+      "test": 1,
+      "train_pct": 71.4,
+      "val_pct": 14.3,
+      "test_pct": 14.3
+    },
+    "wbbfly1": {
+      "total": 7,
+      "train": 5,
+      "val": 1,
+      "test": 1,
+      "train_pct": 71.4,
+      "val_pct": 14.3,
+      "test_pct": 14.3
+    },
+    "darter2": {
+      "total": 7,
+      "train": 5,
+      "val": 1,
+      "test": 1,
+      "train_pct": 71.4,
+      "val_pct": 14.3,
+      "test_pct": 14.3
+    },
+    "blaeag1": {
+      "total": 6,
+      "train": 4,
+      "val": 1,
+      "test": 1,
+      "train_pct": 66.7,
+      "val_pct": 16.7,
+      "test_pct": 16.7
+    },
+    "wynlau1": {
+      "total": 6,
+      "train": 4,
+      "val": 1,
+      "test": 1,
+      "train_pct": 66.7,
+      "val_pct": 16.7,
+      "test_pct": 16.7
+    },
+    "asiope1": {
+      "total": 5,
+      "train": 3,
+      "val": 1,
+      "test": 1,
+      "train_pct": 60.0,
+      "val_pct": 20.0,
+      "test_pct": 20.0
+    },
+    "integr": {
+      "total": 5,
+      "train": 3,
+      "val": 1,
+      "test": 1,
+      "train_pct": 60.0,
+      "val_pct": 20.0,
+      "test_pct": 20.0
+    },
+    "niwpig1": {
+      "total": 5,
+      "train": 3,
+      "val": 1,
+      "test": 1,
+      "train_pct": 60.0,
+      "val_pct": 20.0,
+      "test_pct": 20.0
+    }
+  }
+}
